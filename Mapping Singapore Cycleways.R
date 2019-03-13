@@ -6,10 +6,6 @@
 # Clear working memory
 rm(list=ls())     
 
-# Set working directory
-setwd("D:/Rachel's Doc/UChic MSCAPP/Curriculum/2018 Fall/Others/Open Street Maps R Workshop")
-getwd()
-
 # Load libraries
 library(magrittr)
 library(osmdata)
@@ -17,6 +13,7 @@ library(sf)
 library(sp)
 library(leaflet)
 library(raster)
+library(rgdal)
 
 ######## Ploting OSM #########
 
