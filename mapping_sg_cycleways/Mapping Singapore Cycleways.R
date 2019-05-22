@@ -4,7 +4,7 @@
 ######## Set up #########
 
 # Clear working memory
-rm(list=ls())     
+rm(list=ls())
 
 # Load libraries
 library(magrittr)
