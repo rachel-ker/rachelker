@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>RSVP</h2>
+    <form id="test-form">
+  
+      <div>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Rachel">
+      </div>
+      <br>
+      
+      <div>
+        <label>Will you be attending the Church Wedding?</label><br>
+        <input type="radio" name="church_wedding" value="Yes" checked> Yes
+        <input type="radio" name="church_wedding" value="No"> No<br>
+      </div>
+      <br>
+
+      <div>
+        <label>Number of people in your party (including you)</label>
+        <input type="text" name="church_pax" placeholder="3">
+      </div>
+      <br>
+      
+      <div>
+        <label>Will you be attending the Wedding Dinner?</label><br>
+        <input type="radio" name="wedding_dinner" value="Yes" checked> Yes
+        <input type="radio" name="wedding_dinner" value="No"> No<br>
+      </div>
+      <br>
+
+      <div>
+        <label>Number of people in your party (including you)</label>
+        <input type="text" name="dinner_pax" placeholder="3">
+      </div>
+      <br>
+
+      <div>
+        <label>Any other comments/dietary requirements we should know?</label>
+        <input type="textarea" name="comments">
+      </div>
+    
+      <div>
+        <button type="submit" id="submit-form">Submit</button>
+      </div>
+    
+    </form>
+    <script>
+      document.querySelector("#test-form").addEventListener("submit", 
+      function(e)
+      {
+      e.preventDefault();    //stop form from submitting
+      google.script.run.addNewItem(this);
+       google.script.host.close();//close this dialogbox
+      }
+      );
+      </script>
+  </body>
+</html>
