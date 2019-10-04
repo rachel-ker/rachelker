@@ -1,4 +1,4 @@
-var html = HtmlService.createHtmlOutputFromFile('bryandrach.html');
+var html = HtmlService.createHtmlOutputFromFile('rsvp.html');
 
 
 function doGet() {
