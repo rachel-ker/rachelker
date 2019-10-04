@@ -5,6 +5,7 @@
 
 # Clear working memory
 rm(list=ls())
+setwd("/Users/rachelker/Github/rachelker")
 
 # Load libraries
 library(magrittr)
